@@ -6,8 +6,9 @@
     </div>
     <div class="card-footer">
         <div class="d-flex flex-wrap justify-content-center">
-            <div class="tag me-2 mb-1">Angular</div>
-            <div class="tag me-2 mb-1">TypeScript</div>
+            <div *ngFor="let tag of project.tags">     
+                <div class="tag me-2 mb-1">{{tag}}</div>
+            </div>
         </div>
     </div>
 </div>
