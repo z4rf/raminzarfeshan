@@ -11,6 +11,14 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjCardComponent } from './proj-card/proj-card.component';
+import { ProjectModalComponent } from './project-modal/project-modal.component';
+
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -21,12 +29,17 @@ import { ProjCardComponent } from './proj-card/proj-card.component';
     PortfolioComponent,
     ResumeComponent,
     ContactComponent,
-    ProjCardComponent
+    ProjCardComponent,
+    ProjectModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ModalModule.forRoot(),
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,20 +17,10 @@ export class PortfolioComponent implements OnInit {
     this.projects = this.projectService.GetProjects();
   }
 
-  // project: Project = {
-  //   id: 0,
-  //   name: 'Sample Angular App',
-  //   summary: 'sample summary blah',
-  //   description: 'sample description blah blah',
-  //   projectLink: '',
-  //   tags: [Tag.PYTHON, Tag.ANGULAR, Tag.TYPESCRIPT],
-  //   pictures: []
-  // };
-
   projects = {} as Project[];
+  isCollapsed: boolean = true;
 
   constructor(private titleService: Title,private projectService: ProjectsService) {
     this.titleService.setTitle("Ramin Zarfeshan - Portfolio");
   }
 }
-//RAMIN: stopped at video 11
