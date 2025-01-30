@@ -1,1 +1,101 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">-</div>
+                    <div class="btn-link">Work Experience</div>
+                    <div style="width: 10.95px">
+                        <div *ngIf="!isWorkOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align:left">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">Sample company</h3>
+                    <ul>
+                        <li>Blah</li>
+                        <li>Blah blah</li>
+                        <li>Blah blah blah</li>
+                    </ul>
+                </div>
+                <br>
+                <div style="text-align:left">
+                    <h2 class="mb-0">Software Engineer 2</h2>
+                    <h3 class="text-primary">Sample company</h3>
+                    <ul>
+                        <li>Blah</li>
+                        <li>Blah blah</li>
+                        <li>Blah blah blah</li>
+                    </ul>
+                </div>
+
+            </accordion-group>
+            <accordion-group [(isOpen)]="isEduOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">-</div>
+                    <div class="btn-link">Education</div>
+                    <div style="width: 10.95px">
+                        <div *ngIf="!isEduOpen" style="color: white;">></div>
+                        <div *ngIf="isEduOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align:left">
+                    <h2 class="mb-0">School</h2>
+                    <h3 class="text-primary">Major</h3>
+                    <ul>
+                        <li>Blah</li>
+                        <li>Blah blah</li>
+                        <li>Blah blah blah</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">-</div>
+                    <div class="btn-link">Certifications</div>
+                    <div style="width: 10.95px">
+                        <div *ngIf="!isCertOpen" style="color: white;">></div>
+                        <div *ngIf="isCertOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left">
+                    <h3>CompTIA Security+</h3>
+                    <ul>
+                        <li>Obtained August 2024</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">-</div>
+                    <div class="btn-link">Skills</div>
+                    <div style="width: 10.95px">
+                        <div *ngIf="!isSkillOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left">
+                    <div class="col">
+                        <h3>Languages+</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Bash</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Technologies+</h3>
+                        <ul>
+                            <li>Ansible</li>
+                            <li>Terraform/Terragrunt</li>
+                            <li>AWS</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
