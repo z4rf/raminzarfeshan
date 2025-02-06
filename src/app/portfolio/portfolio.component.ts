@@ -21,6 +21,7 @@ export class PortfolioComponent implements OnInit {
   typeScript: boolean = false;
   angular: boolean = false;
   python: boolean = false;
+  iOS: boolean = false;
   
   ngOnInit(): void {
     this.projects = this.projectService.GetProjects();
@@ -33,8 +34,8 @@ export class PortfolioComponent implements OnInit {
   Filter() {
     let filterTags: Tag[] = [];
 
-    if (this.typeScript) {
-      filterTags.push(Tag.TYPESCRIPT);
+    if (this.iOS) {
+      filterTags.push(Tag.IOS);
     }
     if (this.angular) {
       filterTags.push(Tag.ANGULAR);
@@ -43,7 +44,7 @@ export class PortfolioComponent implements OnInit {
       filterTags.push(Tag.PYTHON);
     }
 
-    if (this.typeScript || this.angular || this.python) {
+    if (this.iOS || this.angular || this.python) {
       this.filtering = true;
     } else {
       this.filtering = false;

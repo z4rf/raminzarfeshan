@@ -4,8 +4,8 @@
          <div class="col-lg shadow border m-1">
             <div class="text-center">
                 <h2>About Me</h2>
-                <img src="../../assets/morseDetail.png" alt="dummy-pic" width="256" height="256" class="rounded-circle">
-                <p>ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                <img src="../../assets/headshot.jpg" width="256" height="256" class="rounded-circle">
+                <p>DC based DevOps Engineer and Full Stack Developer who is always looking for a challenge</p>
             </div>
          </div>
          <!-- Featured Project -->
@@ -17,7 +17,7 @@
 
             <carousel>
                 <div *ngFor="let pic of featuredProject.pictures">
-                    <slide><img src={{pic}} alt="img1.png" style="display:block; width: 100%"></slide>
+                    <slide><img src={{pic}} style="max-width: 50%;"></slide>
                 </div>
             </carousel>
 
