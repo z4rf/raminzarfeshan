@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row">
+    <div class="row h-66">
         <!-- About me -->
          <div class="col-lg shadow border m-1">
             <div class="text-center">
@@ -16,7 +16,7 @@
             </div>
 
             <carousel>
-                <div *ngFor="let pic of featuredProject.pictures">
+                <div *ngFor="let pic of featuredProject.pictures" style="text-align: center;">
                     <slide><img src={{pic}} style="max-width: 50%;"></slide>
                 </div>
             </carousel>
