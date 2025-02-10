@@ -29,15 +29,15 @@ export class ProjectsService {
         
       {id: 2,
         name: "Morse Trainer",
-        pictures: ["iOS screenshot", "IDE screenshot", "binary tree"],
-        projectLink: "RAMIN put it on git then link to it",
+        pictures: ["../../assets/morse/ide.png", "../../assets/morse/simulation.png", "../../assets/morse/morse-tree.png"],
+        projectLink: "https://github.com/z4rf/morse",
         summary: "A morse code trainer built in Swift for iOS devices",
-        description: "I built this in one sitting during college while avoiding studying for my Linear Algebra final.  The basic data structure revolves around a binary tree.  As each node has only two children and there are only two inputs that can be used when spelling out a letter in morse code, I was able to encode the alphabet in a binary tree then read from the tree when the user inputs some combination of dots and dashes.  The user has the ability to store letters and clear all stored letters so that they can practice spelling entire words.",
+        description: "This is a simple app to help practice and memorize Morse code.  Morse code is a form of encoding letters using only dots and dashes.  The basic data structure of this app revolves around a binary tree.  As each node has only two children and there are only two inputs that can be used when spelling out a letter in morse code, I was able to encode the alphabet in a binary tree then read from the tree when the user inputs some combination of dots and dashes.  The user has the ability to store letters and clear all stored letters so that they can practice spelling entire words.",
         tags: [Tag.SWIFT, Tag.DATA_STRUCTURE]},
         
       {id: 3,
         name: "Storage Health Dashboard",
-        pictures: ["The only picture I have", "mongodb/python/react logos"],
+        pictures: ["../../assets/storage/table.png", "../../assets/storage/logos.png"],
         projectLink: "",
         summary: "Quickly assess health of storage services",
         description: "I completed this project while working an internship with ADP. I wrote almost all of the code for this project from scratch. The code that I didn't write from scratch I greatly optimized. There were three layers of applications involved in this project.  \
@@ -48,17 +48,17 @@ export class ProjectsService {
         
       {id: 4,
         name: "ESH: Extensible Shell",
-        pictures: ["ESH gif", "find project spec"],
+        pictures: ["../../assets/esh/esh.gif"],
         projectLink: "",
         summary: "Fully extensible and customizable shell written in C",
-        description: "Using only C standard libraries, I built a shell with the functionality of an ordinary bash shell, with the added capability of handling plugins. The shell's base functionality consists of a few simple features: parsing input, job control, and signal handling.  \
+        description: "Using only C standard libraries, I built a shell with the functionality of an ordinary bash shell, with the added capability of handling plugins. The shell's base functionality consists of a few simple features: parsing input, job control, and signal handling. \
         Job Control: each command (when executed) is forked off and executed as its own process, the same way an ordinary shell would. If the command needs access to the entire terminal window (instead of simply printing to standard output) control is given to the command.  \
         Signal Handling: signals (like SIGKILL, SIGINT, SIGABRT) can be sent at any time during execution, and the shell is able to catch and appropriately handle these signals.",
         tags: [Tag.C]},
         
       {id: 5,
         name: "Threadpool",
-        pictures: ["i've got nothing damn"],
+        pictures: ["../../assets/pool/pool.png"],
         projectLink: "",
         summary: "Intelligent and efficient Threadpool, written in C",
         description: "Leveraging the C standard library's pthread.h header, I created a threadpool capable of recieving tasks and sharing work among its threads.  When a task is submitted to a threadpool, any available thread can begin executing it. However, when many tasks are submitted, threads implement work stealing and work sharing, which allows the threadpool to ease stress on any single thread should there be any.  \
@@ -74,7 +74,7 @@ export class ProjectsService {
         description: "Using a photo editing tool called GIFKR, I applied different variations of pixel sorting on some pictures I've taken in the past. As I created more images, I learned how to refine my process to get exactly what I want. You'll see my progress as you scroll down. Some use of Pixelmator was used as well for additional edits.",
         tags: [Tag.ART]}
     ]
-        
+
 
   constructor() { }
 
