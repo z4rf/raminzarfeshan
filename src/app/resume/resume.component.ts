@@ -22,8 +22,8 @@ export class ResumeComponent {
   DownloadFile() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../assets/Ramin_Z_Resume_2024.pdf');
-    link.setAttribute('download', 'Resume.pdf');
+    link.setAttribute('href', '../../assets/Resume_2025.pdf');
+    link.setAttribute('download', 'RaminZarfeshan.pdf');
     link.click();
     link.remove();
   }
