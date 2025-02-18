@@ -24,7 +24,7 @@ export class ProjectsService {
         pictures: ["../../assets/site/page.png", "../../assets/site/ide.png", "../../assets/site/logos.png"],
         projectLink: "/",
         summary: "This website, which I personally host",
-        description: "This website was built entirely in Angular, with Angular serving as the javascript framework and an nginx server handling the hosting.  It is currently hosted on a Raspberry Pi in my apartment, and the domain name is provided by ionos.com.  I originially had this website created as a single static HTML page, but realized that not only did I want it to be more dynamic, I also wanted to demonstrate that I had skills developing with TypeScript technologies.",
+        description: "This website was written by me entirely in Angular, and hosted on an nginx server.  The nginx server sits within a Raspberry Pi in my apartment, and the domain name is provided by ionos.com.  I originially had this website created as a single static HTML page, but realized that not only did I want it to be more dynamic, I also wanted to demonstrate that I had skills developing with TypeScript technologies.",
         tags: [Tag.ANGULAR, Tag.NETWORKING]},
         
       {id: 2,
